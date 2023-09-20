@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; 
+            padding: 0; 
+            background-image: url('/static/bg.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            size: 100vf;
+        }
+
+
+        .my-button {
+            background-color: transparent; /* Background color */
+            color: #fff; /* Text color */
+            border: 5px solid #F9AD5C; /* Remove border */
+            padding: 20px 40px; /* Padding around text */
+            width: 275px; /* Fixed width for the buttons */
+            height: 275px; /* Fixed height for the buttons */
+            border-radius: 20px; /* Rounded corners */
+            cursor: pointer; /* Cursor style on hover */
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 22px; /* Font size */
+            transition: all 0.2s; /* Transition for all properties over 0.2 seconds */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            display: flex; /* Enable flex layout to center text vertically */
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+            margin: 50px;
+        }
+
+        /* Style for button hover state */
+        .my-button:hover {
+            background-color: rgba(0, 116, 217, 0.1); /* Transparent background color on hover */
+            transform: scale(1.05);
+        }
+
+        .label_button {
+            background-color: transparent; /* Transparent background */
+            color: #ffffff; /* Text color */
+            padding: 15px 30px;
+            border: 0px transparent;
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 60px;
+            top: 50px;
+            left: 75px;
+        }
+
+        .next_button {
+            background-color: transparent; 
+            color: #ffffff; 
+            padding: 15px 30px;
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 20px;
+            border: 5px solid #F9AD5C; 
+            border-radius: 20px;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            position: absolute;
+            padding: 10px 20px;
+            cursor: pointer;
+            top: 20px; 
+            right: 20px; 
+        }
+
+        .next_button:hover {
+            background-color: rgba(0, 116, 217, 0.1); /* Transparent background color on hover */
+            transform: scale(1.05);
+        }
+
+        .text-box {
+            position: absolute; /* Enable relative positioning for precise placement */
+            top: 800px; /* Position 100px from the top */
+            left: 440px; /* Position 50px from the left */
+            width: 100%; /* Full width of the container */
+            padding: 10px; /* Padding for spacing */
+        }
+
+        .text-paragraph {
+            font-size: 20px; /* Font size for the paragraph */
+            margin-top: 10px; /* Margin to create spacing between text box and paragraph */
+            font-family: 'Share', Arial, sans-serif;
+            color: #fff;
+        }
+
+        .label_button {
+            position: absolute;
+            background-color: transparent; /* Transparent background */
+            color: #ffffff; /* Text color */
+            padding: 15px 30px;
+            border: 0px transparent;
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 60px;
+            top: 0px;
+            left: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <div><a href="/"> <button class="label_button">MyLangAI</button></a></div>
+    <div><a href="/final_page"><button class="next_button">Next</button></a></div>
+    <div class="button-container">
+        <a href="/set_tense/present-perfect" style="text-decoration: none;"><button class="my-button"">Present Perfect</button></a>
+        <a href="/set_tense/preterite" style="text-decoration: none;"><button class="my-button">Preterite</button></a>
+        <a href="/set_tense/imperfect" style="text-decoration: none;"><button class="my-button">Imperfect</button></a>
+        <a href="/set_tense/compound-future" style="text-decoration: none;"><button class="my-button">Compound Future</button></a>
+        <a href="/set_tense/conditional" style="text-decoration: none;"><button class="my-button">Conditional</button></a>
+        <a href="/set_tense/subjunctive" style="text-decoration: none;"><button class="my-button">Subjunctive</button></a>
+    </div>
+    <div class="text-box">
+        <p class="text-paragraph">Note: Please allow some time for quiz to generate. Happy Studying!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; 
+            padding: 0; 
+            background-image: url('/static/bg.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Add CSS for the image */
+        .bottom-left-image {
+            position: absolute;
+            bottom: -130px;
+            left: -150px;
+            width: 1100px; 
+            height: auto; 
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: flex-end;
+            position: absolute;
+            top: 50px;
+            right: 75px;
+            padding: 100px; 
+            height: 67%; 
+            border: 10px solid #F9AD5C; 
+            border-radius: 30px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            
+        }
+
+        .container-text-top {
+            font-size: 40px; 
+            font-family: 'Share', Arial, sans-serif;
+            color: #fff; 
+            margin-bottom: 35px; 
+        }
+
+        .container-text-mid {
+            font-size: 22px; 
+            font-family: 'Share', Arial, sans-serif;
+            color: #fff; 
+            margin-bottom: 1px; 
+        }
+
+        .container-text-bot {
+            font-size: 22px; /* Font size for the text */
+            font-family: 'Share', Arial, sans-serif;
+            color: #fff; /* Text color */
+            margin-bottom: 40px; /* Margin to create spacing between text and buttons */
+        }
+
+
+        .my-button {
+            background-color: transparent; /* Background color */
+            color: #fff; /* Text color */
+            border: 5px solid #F9AD5C; 
+            padding: 20px 40px; /* Padding around text */
+            width: 300px; /* Fixed width for the buttons */
+            height: auto; /* Fixed height for the buttons */
+            border-radius: 20px; /* Rounded corners */
+            cursor: pointer; /* Cursor style on hover */
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 22px; /* Font size */
+            transition: all 0.2s; /* Transition for all properties over 0.2 seconds */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            margin-bottom: 10px; /* Vertical spacing between buttons */
+            align-self: center; /* Center button vertically within the container */
+            display: flex; /* Enable flex layout to center text vertically */
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+            margin-top: 40px; 
+            margin-bottom: 10px;
+        }
+
+        /* Style for button hover state */
+        .my-button:hover {
+            background-color: rgba(0, 116, 217, 0.1); /* Transparent background color on hover */
+            transform: scale(1.05);
+        }
+
+        .label_button {
+            position: absolute;
+            background-color: transparent; 
+            color: #ffffff; 
+            padding: 15px 30px;
+            border: 0px transparent;
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 60px;
+            top: 0px;
+            left: 0px;
+
+        }
+
+        .next_button {
+            background-color: transparent; 
+            color: #ffffff; 
+            padding: 15px 30px;
+            font-family: 'Share', Arial, sans-serif;
+            font-size: 20px;
+            border: 5px solid #F9AD5C; 
+            border-radius: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            cursor: pointer; 
+        }
+
+        .next_button:hover {
+            background-color: rgba(0, 116, 217, 0.1); /* Transparent background color on hover */
+            transform: scale(1.05);
+        }
+
+        /* Style for the text box */
+        .text-box {
+            position: absolute; /* Enable relative positioning for precise placement */
+            top: 125px; 
+            left: 25px; 
+            width: 100%; /* Full width of the container */
+            padding: 10px; /* Padding for spacing */
+        }
+
+        .text-paragraph {
+            font-size: 25px; /* Font size for the paragraph */
+            margin-top: 10px; /* Margin to create spacing between text box and paragraph */
+            font-family: 'Share', Arial, sans-serif;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="/"> <button class="label_button">MyLangAI</button></a>
+    <div class="text-box">
+        <p class="text-paragraph">MyLangAI is a free AI powered Spanish teacher. Choose a level <br>to begin, then choose a tense you want to practice, and <br>AI takes care of the rest!</p>
+    </div>
+    <div class="button-container">
+        <p class="container-text-top">¡Hola! Let's Begin</p>        
+        <p class="container-text-mid">Below, choose your proffiency</p>
+        <p class="container-text-bot">and click next!</p>
+        <a href="/set_level/beginner" style="text-decoration: none;"><button class="my-button">  Beginner  </button></a>
+        <a href="/set_level/intermediate" style="text-decoration: none;"><button class="my-button">Intermediate</button></a>
+        <a href="/set_level/expert" style="text-decoration: none;"><button class="my-button">   Expert   </button></a>  
+        <a href="/level_select" style="text-decoration: none;"><button class="next_button">Next</button></a>
+    </div>
+    <img src="/static/art.png" alt="Image" class="bottom-left-image">
+</body>
+</html>
